@@ -1,0 +1,18 @@
+:root {
+  // base
+  --font-family: "Poppins", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+  --content-width: 1213px;
+  --container-offset: 30px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --c-light: #f3fcff;
+  --c-light-beige: #fffcf5;
+  --c-dark: #000000;
+  --c-gray: #535359;
+  --c-gray-blue: #455a64;
+  --c-steel-gray: #37474f;
+  --c-black: #393939;
+  --c-accent: #fe9563;
+}

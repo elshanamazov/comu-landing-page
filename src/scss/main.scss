@@ -1,0 +1,14 @@
+/* Base */
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+/* Blocks */
+@import "./components/btn";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/burger";
+@import "./components/promo";
+@import "./components/advantages";
+@import "./components/footer";

@@ -1,0 +1,38 @@
+.advantages {
+  display: flex;
+
+  &__item {
+    position: relative;
+    color: var(--c-gray-blue);
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-right: 6px;
+    margin: 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:not(:first-child) {
+      padding-left: 6px;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 2px;
+      height: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--c-accent);
+    }
+  }
+
+  &__text {
+    margin: 0;
+    display: inline-block;
+  }
+}

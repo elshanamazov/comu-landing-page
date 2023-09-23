@@ -1,0 +1,77 @@
+.burger {
+  --time: 0.1s;
+
+  --width: 30px;
+  --height: 24px;
+
+  --line-height: 3px;
+  --spacing: 6px;
+
+  --color: var(--c-dark);
+  --radius: 5px;
+
+  height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+  width: var(--width);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+
+  &__line {
+    position: relative;
+    width: var(--width);
+    height: var(--line-height);
+    background-color: var(--color);
+    border-radius: var(--radius);
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      left: 0;
+
+      width: var(--width);
+      height: var(--line-height);
+
+      border-radius: var(--radius);
+      background-color: var(--color);
+      transition: transform var(--time) ease-in,
+        top var(--time) linear var(--time);
+    }
+
+    &::before {
+      top: calc(-1 * (var(--line-height) + var(--spacing)));
+    }
+
+    &::after {
+      top: calc(var(--line-height) + var(--spacing));
+    }
+
+    &--active {
+      background-color: transparent;
+    }
+
+    &--active::after,
+    &--active::before {
+      top: 0;
+      transition: top var(--time) linear,
+        transform var(--time) ease-in var(--time);
+      background-color: var(--c-light);
+    }
+
+    &--active::before {
+      transform: rotate(45deg);
+    }
+
+    &--active::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @include small-tablet {
+    display: flex;
+  }
+}

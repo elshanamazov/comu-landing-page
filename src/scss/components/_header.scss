@@ -1,0 +1,29 @@
+.header {
+  padding-top: 33px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include small-tablet {
+      justify-content: space-between;
+    }
+  }
+
+  &--position {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    @include small-tablet {
+      max-width: 150px;
+      text-align: center;
+    }
+  }
+}

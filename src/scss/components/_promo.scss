@@ -33,14 +33,9 @@
     }
   }
 
-  &__content {
-    display: flex;
-    flex: 0 0 auto;
-    justify-content: center;
-    width: 50%;
+  &__title {
     @include small-tablet {
-      width: 100%;
-      margin-bottom: 30px;
+      text-align: center;
     }
   }
 
@@ -53,11 +48,6 @@
   }
 
   &__pic {
-    display: flex;
-    flex: 0 0 auto;
-    width: 50%;
-    justify-content: center;
-    overflow: hidden;
     @include small-tablet {
       width: 100%;
     }

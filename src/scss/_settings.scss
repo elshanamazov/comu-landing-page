@@ -30,11 +30,15 @@ html {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+  @include small-tablet {
+    padding: 0 20px;
+  }
 }
 
 .site-container {
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 img {
@@ -111,6 +115,20 @@ a {
   }
 }
 
+.section-subtitle {
+  color: var(--c-steel-gray);
+  font-family: var(--font-family-secondary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
 .section-desc {
   color: var(--c-gray);
   font-family: var(--font-family);
@@ -120,8 +138,40 @@ a {
   letter-spacing: 0.5px;
   margin: 0;
   max-width: 450px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
   @include small-tablet {
     text-align: center;
+  }
+}
+
+.section-pic {
+  display: flex;
+  flex: 0 0 auto;
+  width: 50%;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 20px;
+
+  @include small-tablet {
+    padding: 0;
+  }
+}
+
+.section-content {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  width: 50%;
+  padding: 0 20px;
+
+  @include small-tablet {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -142,4 +192,18 @@ a {
     visibility: visible;
     transition: opacity 0.5s;
   }
+}
+
+.pt-115 {
+  padding-top: 115px;
+
+  @include small-tablet {
+    padding-top: 90px;
+  }
+}
+
+.block-style {
+  border-radius: 48.742px;
+  background: linear-gradient(300deg, #f5f2eb 1.26%, #f7e6cb 100.49%);
+  box-shadow: 5.53883px 5.53883px 28.8019px 0px #dd8762;
 }

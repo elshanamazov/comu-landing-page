@@ -113,6 +113,10 @@ a {
   @include mobile {
     text-align: center;
   }
+
+  &--black {
+    color: var(--c-dark);
+  }
 }
 
 .section-subtitle {
@@ -132,7 +136,7 @@ a {
 .section-desc {
   color: var(--c-gray);
   font-family: var(--font-family);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 0.5px;
@@ -146,6 +150,11 @@ a {
   @include small-tablet {
     text-align: center;
   }
+
+  &--secondary {
+    font-family: var(--font-family-secondary);
+    color: var(--c-black);
+  }
 }
 
 .section-pic {
@@ -154,7 +163,7 @@ a {
   width: 50%;
   justify-content: center;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 0 25px;
 
   @include small-tablet {
     padding: 0;
@@ -166,7 +175,7 @@ a {
   flex: 0 0 auto;
   justify-content: center;
   width: 50%;
-  padding: 0 20px;
+  padding: 0 25px;
 
   @include small-tablet {
     width: 100%;

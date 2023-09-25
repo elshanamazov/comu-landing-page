@@ -1,0 +1,36 @@
+.security {
+  &__top {
+    margin-bottom: 100px;
+  }
+  &__title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__verefication {
+    display: flex;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 19px;
+    letter-spacing: 0.6px;
+    margin-bottom: 15px;
+  }
+
+  &__caption {
+    max-width: 470px;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  &__download {
+    margin-top: 30px;
+  }
+}

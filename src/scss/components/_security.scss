@@ -1,6 +1,10 @@
 .security {
   &__top {
     margin-bottom: 100px;
+
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
   }
   &__title {
     max-width: 100%;
@@ -17,12 +21,24 @@
   &__verefication {
     display: flex;
     align-items: center;
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__pic {
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__subtitle {
     font-size: 19px;
     letter-spacing: 0.6px;
     margin-bottom: 15px;
+    @include small-tablet {
+      text-align: center;
+    }
   }
 
   &__caption {

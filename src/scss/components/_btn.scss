@@ -22,4 +22,10 @@
     border: transparent;
     padding: 9px 25px;
   }
+
+  &--secondary-accent {
+    background: var(--c-accent);
+    color: var(--c-light);
+    padding: 9px 25px;
+  }
 }

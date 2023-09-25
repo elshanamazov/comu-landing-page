@@ -1,4 +1,8 @@
 .download {
   display: flex;
   gap: 13px;
+
+  @include small-tablet {
+    justify-content: center;
+  }
 }

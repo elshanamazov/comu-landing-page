@@ -1,0 +1,48 @@
+.command {
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__pic {
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__content {
+    @include small-tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    max-width: 459px;
+    margin-bottom: 15px;
+    @include small-tablet {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 10px;
+    @include small-tablet {
+      max-width: 100%;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+    @include small-tablet {
+      justify-content: center;
+    }
+  }
+}

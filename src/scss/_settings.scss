@@ -106,8 +106,12 @@ a {
   max-width: 414px;
   margin: 0;
   margin-bottom: 17px;
-  @include small-tablet {
+  @include tablet {
     font-size: 32px;
+  }
+
+  @include small-tablet {
+    font-size: 28px;
   }
 
   @include mobile {
@@ -116,6 +120,10 @@ a {
 
   &--black {
     color: var(--c-dark);
+  }
+
+  &--black-grey {
+    color: var(--c-black-grey);
   }
 }
 
@@ -179,7 +187,6 @@ a {
 
   @include small-tablet {
     width: 100%;
-    padding: 0;
     margin-bottom: 30px;
   }
 }
@@ -208,6 +215,10 @@ a {
 
   @include small-tablet {
     padding-top: 90px;
+  }
+
+  @include mobile {
+    padding-top: 70px;
   }
 }
 

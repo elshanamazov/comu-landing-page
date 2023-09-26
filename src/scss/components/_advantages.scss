@@ -1,13 +1,14 @@
 .advantages {
   display: flex;
 
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__item {
     position: relative;
-    color: var(--c-gray-blue);
-    font-family: var(--font-family);
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.4;
     padding-right: 6px;
     margin: 0;
 
@@ -34,5 +35,10 @@
   &__text {
     margin: 0;
     display: inline-block;
+    color: var(--c-gray-blue);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
   }
 }

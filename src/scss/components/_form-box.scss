@@ -1,0 +1,38 @@
+.form-box {
+  max-width: 100%;
+
+  &__wrap {
+    display: flex;
+    @include small-mobile {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    color: var(--c-ash-gray);
+    font-weight: 400;
+    border-radius: 16px 0 0 16px;
+    border: 0.5px solid var(--c-accent);
+    padding: 20px 27px;
+    max-width: 100%;
+    outline: none;
+    @include small-mobile {
+      border-radius: 16px;
+    }
+  }
+
+  &__btn {
+    border-radius: 0px 8px 8px 0px;
+    padding: 17px 68px;
+    font-weight: 400;
+    @include mobile {
+      padding: 17px 42px;
+    }
+    @include small-mobile {
+      border-radius: 8px;
+    }
+  }
+}

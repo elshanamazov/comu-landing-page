@@ -1,0 +1,43 @@
+.faq {
+  &__title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  &__desc {
+    max-width: 567px;
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+
+  &__answers {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__answer {
+    margin-bottom: 19px;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--c-black);
+    margin-bottom: 10px;
+
+    @include small-tablet {
+      text-align: start;
+      max-width: 100%;
+    }
+  }
+
+  &__more {
+    margin-bottom: 36px;
+  }
+}

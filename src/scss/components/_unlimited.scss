@@ -1,0 +1,49 @@
+.unlimited {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    @include small-tablet {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    @include medium-tablet {
+    }
+  }
+
+  &__title {
+    @include small-tablet {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+    @include small-tablet {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    @include small-tablet {
+      justify-content: center;
+    }
+  }
+
+  &__advantages {
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    @include small-tablet {
+      justify-content: center;
+    }
+  }
+}

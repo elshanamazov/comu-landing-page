@@ -90,14 +90,16 @@
   }
 
   &__copyright,
-  &__link {
+  &__span {
     font-size: 13px;
     color: var(--c-black);
     font-weight: 400;
+    line-height: 1.5;
   }
 
   &-social {
     display: flex;
+    align-items: center;
 
     &__item {
       &:not(:last-child) {
@@ -146,9 +148,5 @@
     margin-right: 10px;
     fill: var(--c-accent);
     transition: transform 0.2s;
-  }
-
-  &__span {
-    padding: 1px;
   }
 }

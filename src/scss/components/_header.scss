@@ -21,6 +21,7 @@
 
   &__btn {
     flex-shrink: 0;
+    font-family: var(--font-family);
     @include small-tablet {
       max-width: 150px;
       text-align: center;

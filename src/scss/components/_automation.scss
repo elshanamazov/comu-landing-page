@@ -23,6 +23,14 @@
     }
   }
 
+  &__block {
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   &__title {
     max-width: 459px;
     @include small-tablet {
@@ -41,9 +49,10 @@
 
   &__card {
     flex-direction: row;
+    width: 300px;
     border-radius: 13px;
     background: var(--c-light);
-    padding: 16px;
+    padding: 13px 16px;
     box-shadow: 0px 9px 17px 0px rgba(0, 0, 0, 0.09);
     &:not(:last-child) {
       margin-bottom: 23px;
@@ -56,17 +65,27 @@
   }
 
   &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 33px;
     height: 33px;
     padding: 5px;
+    margin: 0;
     margin-right: 15px;
 
     @include small-tablet {
       margin-right: 0;
-      width: 56px;
-      height: 56px;
+      margin-bottom: 15px;
+      width: 46px;
+      height: 46px;
       padding: 10px;
     }
+  }
+
+  &__svg {
+    width: 25px;
+    height: 16px;
   }
 
   &__subtitle {
@@ -80,6 +99,11 @@
   }
 
   &__desc {
+    text-align: start;
+  }
+
+  &__text {
+    letter-spacing: normal;
     text-align: start;
   }
 }

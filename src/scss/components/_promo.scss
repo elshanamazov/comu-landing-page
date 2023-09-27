@@ -1,13 +1,21 @@
 .promo {
   position: relative;
   min-height: 726px;
-  background: linear-gradient(178deg, #fffbf0 4.22%, #f7e6cc 98.53%);
+  background-image: image-set(
+    url("../img/promo/promo-bg@1x.png") 1x,
+    url("../img/promo/promo-bg@2x.png") 2x
+  );
+
+  background-size: cover;
+  background-position: center;
   z-index: 2;
+
   @include tablet {
-    min-height: 670px;
+    min-height: 700px;
   }
+
   @include medium-tablet {
-    min-height: 600px;
+    min-height: 640px;
   }
   &::before {
     content: "";
@@ -93,16 +101,5 @@
 
     fill: var(--c-accent);
     padding-right: 6px;
-  }
-
-  &__wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-    & svg {
-      vertical-align: bottom;
-    }
   }
 }

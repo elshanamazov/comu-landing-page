@@ -2,6 +2,7 @@
   &__wrap {
     display: flex;
     align-items: center;
+    box-shadow: 15px 15px 26px 0px var(--c-accent);
     padding: 60px 0;
     @include small-tablet {
       flex-direction: column-reverse;
